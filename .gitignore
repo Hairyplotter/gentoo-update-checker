@@ -1,0 +1,34 @@
+# Build directories
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Object files
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+
+# Executables
+gentoo-update-checker
+
+# Qt generated files
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# CMake
+CMakeUserPresets.json
