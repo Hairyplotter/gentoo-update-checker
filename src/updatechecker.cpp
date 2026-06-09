@@ -161,7 +161,7 @@ void UpdateChecker::onProcessError(QProcess::ProcessError error)
     emit errorOccurred(errorMessage);
 }
 
-QString UpdateChecker::parseEmergeOutput(const QString &output)
+string UpdateChecker::parseEmergeOutput(const QString &output)
 {
     // Parse emerge output to extract package information
     QStringList lines = output.split(QLatin1Char('\n'));
