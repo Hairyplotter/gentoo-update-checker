@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Gentoo Update Checker
+Comment=Monitor Gentoo package updates in the system tray
+Exec=gentoo-update-checker
+Icon=gentoo
+Categories=System;Utility;
+Terminal=false
+X-KDE-StartupNotify=false
+X-KDE-Autostart=true
