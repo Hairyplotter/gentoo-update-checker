@@ -27,9 +27,11 @@ signals:
     void noUpdatesAvailable();
     void errorOccurred(const QString &error);
 
-private slots:
+public slots:
     void checkForUpdates();
     void performSync();
+
+private slots:
     void onSyncFinished(int exitCode, QProcess::ExitStatus exitStatus);
     void onCheckFinished(int exitCode, QProcess::ExitStatus exitStatus);
     void onProcessError(QProcess::ProcessError error);

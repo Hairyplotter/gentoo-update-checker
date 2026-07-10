@@ -10,13 +10,6 @@ find_package(Qt6 REQUIRED COMPONENTS
     Core
     Gui
     Widgets
-    DBus
-)
-
-find_package(KF6 REQUIRED COMPONENTS
-    CoreAddons
-    DBusAddons
-    StatusNotifierItem
 )
 
 set(SOURCE_FILES
@@ -33,10 +26,6 @@ target_link_libraries(gentoo-update-checker
     Qt6::Core
     Qt6::Gui
     Qt6::Widgets
-    Qt6::DBus
-    KF6::CoreAddons
-    KF6::DBusAddons
-    KF6::StatusNotifierItem
 )
 
 # Installation

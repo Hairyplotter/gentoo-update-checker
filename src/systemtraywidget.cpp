@@ -10,7 +10,7 @@
 #include <QProcess>
 #include <QDebug>
 #include <QEvent>
-#include <QClipboard>
+#include <QCloseEvent>
 
 SystemTrayWidget::SystemTrayWidget(QWidget *parent)
     : QMainWindow(parent),
