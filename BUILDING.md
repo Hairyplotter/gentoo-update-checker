@@ -7,12 +7,7 @@
 Install the required development packages:
 
 ```bash
-sudo emerge --ask dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus dev-util/cmake
-```
-
-For KDE Frameworks:
-```bash
-sudo emerge --ask kde-frameworks/kcoreaddons kde-frameworks/kdbusaddons kde-frameworks/kstatusnotifieritem
+sudo emerge --ask dev-qt/qtbase dev-util/cmake
 ```
 
 ## Build Steps
@@ -77,21 +72,16 @@ cp org.gentoo.UpdateChecker.desktop ~/.config/autostart/
 sudo emerge dev-util/cmake
 ```
 
-### Qt5 not found
+### Qt6 not found
 ```bash
-sudo emerge dev-qt/qtcore dev-qt/qtgui
-```
-
-### KDE Frameworks not found
-```bash
-sudo emerge kde-frameworks/kcoreaddons kde-frameworks/kdbusaddons
+sudo emerge dev-qt/qtbase
 ```
 
 ### Compilation errors
 
-Ensure you have a C++17 capable compiler:
+Ensure you have a C++20 capable compiler:
 ```bash
-g++ --version  # Should show GCC 7+ or Clang 5+
+g++ --version  # Should show GCC 10+ or Clang 10+
 ```
 
 If needed, update your toolchain:

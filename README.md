@@ -10,22 +10,20 @@ A lightweight KDE Plasma system tray widget for Gentoo Linux that monitors packa
 - **Desktop Notifications**: Displays notifications when updates are available
 - **Manual Controls**: Trigger sync or check operations manually
 - **Terminal Integration**: Quick access to Konsole for package management
-- **KDE Plasma Native**: Uses KDE Frameworks and Qt5 for seamless integration
+- **KDE Plasma Native**: Uses Qt6 for seamless integration
 
 ## Requirements
 
 ### Runtime
 - Gentoo Linux with KDE Plasma
-- Qt5 (Core, Gui, Widgets, DBus)
-- KDE Frameworks 5 (CoreAddons, DBusAddons, StatusNotifierItem)
+- Qt6 (Core, Gui, Widgets)
 - `emerge` package manager
 - `pkexec` (from kde-misc/polkit-kde-agent-1) for privilege escalation
 
 ### Build
-- CMake >= 3.16
-- C++ compiler with C++17 support
-- Qt5 development headers
-- KDE Frameworks 5 development headers
+- CMake >= 3.20
+- C++ compiler with C++20 support
+- Qt6 development headers
 
 ## Installation
 
@@ -33,9 +31,7 @@ A lightweight KDE Plasma system tray widget for Gentoo Linux that monitors packa
 
 1. **Install dependencies**:
    ```bash
-   sudo emerge -av dev-qt/qtcore dev-qt/qtgui dev-qt/qtwidgets dev-qt/qtdbus \
-       kde-frameworks/kcoreaddons kde-frameworks/kdbusaddons \
-       kde-frameworks/kstatusnotifieritem cmake
+   sudo emerge -av dev-qt/qtbase dev-util/cmake
    ```
 
 2. **Clone and build**:

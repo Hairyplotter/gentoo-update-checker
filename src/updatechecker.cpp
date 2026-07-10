@@ -1,7 +1,5 @@
 #include "updatechecker.h"
 #include <QDebug>
-#include <QRegularExpression>
-#include <QStandardPaths>
 
 UpdateChecker::UpdateChecker(QObject *parent)
     : QObject(parent),
@@ -161,7 +159,7 @@ void UpdateChecker::onProcessError(QProcess::ProcessError error)
     emit errorOccurred(errorMessage);
 }
 
-string UpdateChecker::parseEmergeOutput(const QString &output)
+QString UpdateChecker::parseEmergeOutput(const QString &output)
 {
     // Parse emerge output to extract package information
     QStringList lines = output.split(QLatin1Char('\n'));
